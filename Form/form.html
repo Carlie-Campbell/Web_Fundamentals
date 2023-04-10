@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="/process" method="post">
+        <p>First Name*</p>
+        <textarea name="comment1" cols="20" rows="1"></textarea>
+        <p>Last Name*</p>
+        <textarea name="comment2" cols="20" rows="1"></textarea>
+        <p>Email Address*</p>
+        <textarea name="comment3" cols="30" rows="1"></textarea>
+        <p>Password*</p>
+        <textarea name="comment4" cols="25" rows="1"></textarea>
+        <p>Confirm Password*</p>
+        <textarea name="comment5" cols="25" rows="1"></textarea>
+        <p>Birthday</p>
+        <input type="date" name="dob">
+        <p>Gender Identity</p>
+        <input type="radio" name="genderID" value="female" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="genderID" value="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="genderID" value="non-binary" id="non-binary">
+        <label for="non-binary">Non-binary</label>
+        <input type="radio" name="genderID" value="other" id="other">
+        <label for="other">Other</label>
+        <input type="radio" name="genderID" value="prefer-not-to-answer" id="prefer-not-to-answer">
+        <label for="prefer-not-to-answer">Prefer not to answer</label>
+        <p>A short description about myself is:</p>
+        <textarea name="description" cols="30" rows="10"></textarea>
+        <p>Favorite Language</p>
+        <select name="Language">
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+            <option value="Ruby">Ruby</option>
+            <option value="C#">C#</option>
+        </select>
+        <div>
+            <input type="checkbox" name="offers" id="offers" checked>
+            <label for="offers">I would like
+                to receive email updates!</label>
+        </div>
+        <button type="submit">Create Account</button>
+    </form>
+    <p>* Indicates a required field</p>
+</body>
+
+</html>
